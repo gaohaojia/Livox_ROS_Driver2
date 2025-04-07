@@ -39,10 +39,6 @@ def generate_launch_description():
         name='livox_lidar_publisher',
         output='screen',
         parameters=livox_ros2_params,
-        remappings=[
-            ("livox/lidar", "livox/lidar_points"),
-            ("livox/imu", "imu_data")
-        ]
     )
 
     return LaunchDescription([
